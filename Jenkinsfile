@@ -3,11 +3,11 @@ pipeline {
     environment {
         AWS_ACCESS_KEY_ID = credentials('AWS_ACCESS_KEY_ID')
         AWS_SECRET_ACCESS_KEY = credentials('AWS_SECRET_ACCESS_KEY')
-        AWS_S3_BUCKET = "gradle-app"
+        AWS_S3_BUCKET = "gradle-jenkins-app"
         ARTIFACT_NAME = "sample-gradle-project.jar"
-        AWS_EB_APP_NAME = "gg-app-new"
+        AWS_EB_APP_NAME = "jenkins"
         AWS_EB_APP_VERSION = "${BUILD_ID}"
-        AWS_EB_ENVIRONMENT = "Ggappnew-env"
+        AWS_EB_ENVIRONMENT = "Jenkins-gradle-env"
 
     }
     stages {
